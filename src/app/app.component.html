@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="term" />
+<table>
+  <tr *ngFor="let element of datas | filter: term">
+    <td>{{ element }}</td>
+  </tr>
+</table>
